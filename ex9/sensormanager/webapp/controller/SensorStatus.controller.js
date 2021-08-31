@@ -1,7 +1,8 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/base/strings/formatMessage"
-], function (Controller, formatMessage) {
+    "sap/base/strings/formatMessage",
+      "sap/m/ValueColor"
+], function (Controller, formatMessage, ValueColor) {
     "use strict";
 
     return Controller.extend("keepcool.sensormanager.controller.SensorStatus", {
@@ -21,6 +22,17 @@ sap.ui.define([
 
         navToSensors: function () {
         this.getOwnerComponent().getRouter().navTo("RouteSensors");
+        },
+        
+        formatValueColor: function (oThreshold, iTemperature) {
+            oThreshold = oThreshold || {};
+            if (iTemperature < oThreshold.warm) {
+                return ValueColor.Neutral;
+            } else if (iTemperature >= oThreshold.warm && iTemperature < oThreshold.hot) {
+                return ValueColor.Critical;
+            } else {
+                return ValueColor.Error;
+            }
         }
 
     });
