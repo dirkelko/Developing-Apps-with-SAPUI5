@@ -19,7 +19,7 @@ That is an easy job. Just click on the demo link of the desired exercise.
 | Exercise | | | |
 | :--- | --- | --- | --- |
 | Getting Started | [exercise](https://github.com/dirkelko/Developing-Apps-with-SAPUI5/tree/master/exercises/ex0) | | |
-| Exercise 1 - Project Setup using Business Application Studio | [exercise](https://github.com/dirkelko/Developing-Apps-with-SAPUI5/tree/master/exercises/ex1) | [solution](https://github.com/dirkelko/Developing-Apps-with-SAPUI5/tree/code/ex1/) | [demo](ex1/sensormanager/webapp/index.html) |
+| Exercise 1 - Project Setup using Business Application Studio | [exercise](https://github.com/dirkelko/Developing-Apps-with-SAPUI5/tree/master/exercises/ex1) | [solution](https://github.com/dirkelko/Developing-Apps-with-SAPUI5/tree/gh-pages/ex1/) | [demo](ex1/sensormanager/webapp/index.html) |
 | Exercise 2 - Basic UI5 Configuration and View Creation | [exercise](https://github.com/dirkelko/Developing-Apps-with-SAPUI5/tree/master/exercises/ex2) | [solution](https://github.com/dirkelko/Developing-Apps-with-SAPUI5/tree/code/ex2/) | [demo](ex2/sensormanager/webapp/index.html) |
 | Exercise 3 - Show Sensor Content | [exercise](https://github.com/dirkelko/Developing-Apps-with-SAPUI5/tree/master/exercises/ex3) | [solution](https://github.com/dirkelko/Developing-Apps-with-SAPUI5/tree/code/ex3/) | [demo](ex3/sensormanager/webapp/index.html) |
 | Exercise 4 - Introduce Localization | [exercise](https://github.com/dirkelko/Developing-Apps-with-SAPUI5/tree/master/exercises/ex4) | [solution](https://github.com/dirkelko/Developing-Apps-with-SAPUI5/tree/code/ex4/) | [demo](ex4/sensormanager/webapp/index.html) |
