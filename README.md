@@ -1,6 +1,9 @@
 # Developing Apps With SAPUI5
 On this site you can find an overview about the available exercises, the respective solutions and live demos.
 
+## The Workshop
+Just start with the first exercise [Getting Started](https://github.com/dirkelko/Developing-Apps-with-SAPUI5/tree/master/exercises/ex0/README.md) and then follow the link to the next excercise at the end of each chapter.
+
 ## Working With The Code
 
 These are the steps to get the working code for any of the exercises, in case you missed an exercise or could not resolve an error you encountered.
