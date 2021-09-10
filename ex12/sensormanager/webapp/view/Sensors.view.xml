@@ -24,9 +24,11 @@
                 </content>
             </IconTabBar>
 
-            <f:GridList id="sensorsList"
-                    items="{path: 'sensorModel>/sensors', sorter: {path:'customer', group:true, descending: false}}"
-                    noDataText="{i18n>noSensorDataText}">
+            <f:GridList 
+                id="sensorsList"
+                class="sensorsListContainer"
+                items="{path: 'sensorModel>/sensors', sorter: {path:'customer', group:true, descending: false}}"
+                noDataText="{i18n>noSensorDataText}">
                 <f:customLayout>
                     <grid:GridBoxLayout/>
                 </f:customLayout>
@@ -36,9 +38,10 @@
                             <FlexItemData growFactor="1" shrinkFactor="0"/>
                         </layoutData>
                           <HBox justifyContent="SpaceBetween">
-                            <VBox justifyContent="SpaceBetween" class="sapUiSmallMarginTop sapUiSmallMarginBegin">
+                            <VBox class="sapUiSmallMargin">
                             <Title text="{sensorModel>location}"/>
                             <Label text="{i18n>distanceLabel}:"/>
+                            <ObjectNumber number="{sensorModel>distance}" unit="{i18n>distanceUnit}"/>
                             </VBox>
                             <cc:Thermometer 
                                 value="{sensorModel>temperature/value}"
@@ -50,9 +53,6 @@
                             color="{path: 'sensorModel>temperature/value', formatter:'.formatIconColor'}"
                             size="2.5rem" 
                             class="sapUiSmallMarginTop sapUiSmallMarginEnd"/-->
-                        </HBox>
-                        <HBox justifyContent="SpaceBetween" class="sapUiTinyMarginTop sapUiSmallMarginBottom sapUiSmallMarginBeginEnd">
-                            <ObjectNumber number="{sensorModel>distance}" unit="{i18n>distanceUnit}"/>
                         </HBox>
                     </CustomListItem>
                 </f:items>
