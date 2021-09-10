@@ -1,37 +1,241 @@
 /* Enter your custom styles here */
+
+.sapUiContentPadding {
+    padding: 1rem;
+}
+
 .thermometer {
     display: block;
     position: relative;
     box-sizing: border-box;
-    width: 18px;
-    height: 60px;
-    background-color: white;
-    border-radius: 10px 10px 0 0;
-    margin: 6px;
+    width: 40px;
+    height: 70px;
+    margin: 10px;
+    background-color: transparent;
 }
 
-.thermometer-value {
-    position: absolute;
-    bottom: -22px; 
-    left: -6px;
-    border: 2px solid white;
-    width: 22px;
-    height: 18px;
-    border-radius: 14px;
-    color: white;
-    font-size: 13px;
+/*
+   sap_fiori_3
+*/
+
+.sapUiTheme-sap_fiori_3 .thermometer__frame {
+    fill: #32363a;
+}
+
+.sapUiTheme-sap_fiori_3 .sapMLIBActive .thermometer__mercury,
+.sapUiTheme-sap_fiori_3 .sapMLIBActive .thermometer__frame {
+    fill: #fff;
+}
+
+.sapUiTheme-sap_fiori_3 .thermometer__value {
+    color: #fff;
+}
+
+.sapUiTheme-sap_fiori_3 .sapMLIBActive .thermometer__value {
+    color: #32363a;
+}
+
+/*
+   sap_fiori_3_dark
+*/
+
+.sapUiTheme-sap_fiori_3_dark .thermometer__frame {
+    fill: #fff;
+}
+
+.sapUiTheme-sap_fiori_3_dark .sapMLIBActive .thermometer__mercury,
+.sapUiTheme-sap_fiori_3_dark .sapMLIBActive .thermometer__frame {
+    fill: #29313a;
+}
+
+.sapUiTheme-sap_fiori_3_dark .thermometer__value {
+    color: #fff;
+}
+
+.sapUiTheme-sap_fiori_3_dark .sapMLIBActive .thermometer__value {
+    color: #91c8f6;
+}
+
+foreignObject {
+    overflow: visible;
+}
+
+/*
+   sap_fiori_3_hcb
+*/
+
+.sapUiTheme-sap_fiori_3_hcb .thermometer__frame {
+    fill: #fff;
+}
+
+.sapUiTheme-sap_fiori_3_hcb .sapMLIBActive .thermometer__frame {
+    fill: #fff;
+}
+
+.sapUiTheme-sap_fiori_3_hcb .thermometer__value {
+    color: #fff;
+    background: #000;
+}
+
+.sapUiTheme-sap_fiori_3_hcb .sapMLIBHoverable:hover .thermometer__value {
+    background: #7a5100;
+}
+
+.sapUiTheme-sap_fiori_3_hcb .sapMLIBActive .thermometer__value {
+    background: #7a5100;
+}
+
+.sapUiTheme-sap_fiori_3_hcb .sapMLIBActive .thermometer__value {
+    color: #fff;
+}
+
+/*
+   sap_fiori_3_hcw
+*/
+
+.sapUiTheme-sap_fiori_3_hcw .thermometer__frame {
+    fill: #000;
+}
+
+.sapUiTheme-sap_fiori_3_hcw .sapMLIBActive .thermometer__frame {
+    fill: #000;
+}
+
+.sapUiTheme-sap_fiori_3_hcw .thermometer__value {
+    color: #000;
+    background: #fff;
+}
+
+.sapUiTheme-sap_fiori_3_hcw .sapMLIBHoverable:hover .thermometer__value {
+    background: #ec8b46;
+}
+
+.sapUiTheme-sap_fiori_3_hcw .sapMLIBActive .thermometer__value {
+    background: #ec8b46;
+}
+
+.sapUiTheme-sap_fiori_3_hcw .sapMLIBActive .thermometer__value {
+    color: #000;
+}
+
+.sapUiTheme-sap_fiori_3_hcw .sapMObjectNumberText,
+.sapUiTheme-sap_fiori_3_hcw .sapMObjectNumberUnit {
+    text-shadow: none;
+}
+
+/*
+   sap_belize
+*/
+
+.sapUiTheme-sap_belize .thermometer__frame {
+    fill: #333;
+}
+
+.sapUiTheme-sap_belize .sapMLIBActive .thermometer__mercury,
+.sapUiTheme-sap_belize .sapMLIBActive .thermometer__frame {
+    fill: #fff;
+}
+
+.sapUiTheme-sap_belize .thermometer__value {
+    color: #fff;
+}
+
+.sapUiTheme-sap_belize .sapMLIBActive .thermometer__value {
+    color: #427cac;
+}
+
+.sapUiTheme-sap_belize .sapMLIBActive .sapMTitle {
+    text-shadow: none;
+}
+
+/*
+   sap_belize_hcb
+*/
+
+.sapUiTheme-sap_belize_hcb .thermometer__frame {
+    fill: #fff;
+}
+
+.sapUiTheme-sap_belize_hcb .sapMLIBActive .thermometer__frame {
+    fill: #fff;
+}
+
+.sapUiTheme-sap_belize_hcb .thermometer__value {
+    color: #fff;
+    background-color: #000;
+}
+
+.sapUiTheme-sap_belize_hcb .sapMLIBHoverable:hover .thermometer__value {
+    background: #7a5100;
+}
+
+.sapUiTheme-sap_belize_hcb .sapMLIBActive .thermometer__value {
+    color: #fff;
+    background-color: #7a5100;
+}
+
+.sapUiTheme-sap_belize_hcb .sapMLIBActive .sapMTitle {
+    text-shadow: none;
+}
+
+.sapUiTheme-sap_belize_hcb .sapMObjectNumberText,
+.sapUiTheme-sap_belize_hcb .sapMObjectNumberUnit {
+    text-shadow: none;
+}
+
+/*
+   sap_belize_hcw
+*/
+
+.sapUiTheme-sap_belize_hcw .thermometer__frame {
+    fill: #000;
+}
+
+.sapUiTheme-sap_belize_hcw .sapMLIBActive .thermometer__frame {
+    fill: #000;
+}
+
+.sapUiTheme-sap_belize_hcw .thermometer__value {
+    color: #000;
+    background-color: #fff;
+}
+
+.sapUiTheme-sap_belize_hcw .sapMLIBHoverable:hover .thermometer__value {
+    background: #ec8b46;
+}
+
+.sapUiTheme-sap_belize_hcw .sapMLIBActive .thermometer__value {
+    color: #000;
+    background-color: #ec8b46;
+}
+
+.sapUiTheme-sap_belize_hcw .sapMLIBActive .sapMTitle {
+    text-shadow: none;
+}
+
+.sapUiTheme-sap_belize_hcw .sapMObjectNumberText,
+.sapUiTheme-sap_belize_hcw .sapMObjectNumberUnit {
+    text-shadow: none;
+}
+
+/**/
+
+foreignObject {
+    overflow: visible;
+}
+
+foreignObject div {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    display: block;
+    width: 42px;
+    height: 42px;
     text-align: center;
-    padding-top: 4px; /*  to center the text */
+    line-height: 42px;
 }
 
-.thermometer-level {
-    background-color: white;
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
-    bottom: 1px;
-    height: 30px;
-    width: 14px;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
+.sensorsListContainer {
+    margin: 0 10px;
+    max-width: calc(100% - 20px);
 }
